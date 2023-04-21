@@ -72,7 +72,7 @@ public class Curriculum_New_1_4 {
     	// Q5 
     	// 次のプログラムを実行すると「ハローJAVA2023」という結果が表示されます。
     	//「ハローJAVA43」と表示とさせたいのですが、意図通りに動きません。正しく動作するように修正してください。
- 		int num = 20;
+ 		int num = 20; //intに変更しました
  		int num1 = 23;
  		System.out.println("ハローJAVA" + (num + num1));
  		 
