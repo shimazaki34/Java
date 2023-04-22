@@ -60,7 +60,7 @@ public class Curriculum_New_1_5 {
    	 	System.out.println("身長は" + height + "cmです");
    	 	System.out.println("体重は" + weight + "kgです");
    	 	System.out.println("好きな食べ物は" + like + "です");
-   	 	System.out.println("BMIは" + Math.floor(BMI) + "です");
+   	 	System.out.println("BMIは" + Math.floor(BMI) + "です"); //
    		
     	// ↓↓コンソール最終結果↓↓
     	
