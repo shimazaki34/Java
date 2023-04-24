@@ -1,5 +1,8 @@
 package kadai1_5;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class Curriculum_New_1_5 {
 
     public static void main(String[] args) {
@@ -33,8 +36,11 @@ public class Curriculum_New_1_5 {
         // ただし計算は数値を直書きせず、全て変数を使ってすること
 
         // Q2を下記に記載
-    	double BMI = weight / ((height / 100) * (height / 100));
-   		System.out.println("BMIは" + Math.floor(BMI) + "です");
+    	double BMI = (weight / (height * height)) * 10000;
+    	BigDecimal bd = new BigDecimal(BMI);
+    	BigDecimal bd1 = bd.setScale(1, RoundingMode.HALF_UP);
+    	
+   		System.out.println("BMIは" + bd1 + "です");
    		
    		System.out.println();
     			 
@@ -53,14 +59,17 @@ public class Curriculum_New_1_5 {
     	height = 168.5;
     	weight = 64.2;
     	like = "オムライス";
-    	BMI = weight / ((height / 100) * (height / 100));
+    	double BMI1 = (weight / (height * height)) * 10000;
+    	BigDecimal bd2 = new BigDecimal(BMI1);
+    	BigDecimal bd3 = bd2.setScale(1, RoundingMode.HALF_UP);
+    	
     	
    	 	System.out.println("初めまして" + name + "です");
    	 	System.out.println("年齢は" + age + "歳です");
    	 	System.out.println("身長は" + height + "cmです");
    	 	System.out.println("体重は" + weight + "kgです");
    	 	System.out.println("好きな食べ物は" + like + "です");
-   	 	System.out.println("BMIは" + Math.floor(BMI) + "です"); //
+   	 	System.out.println("BMIは" + bd3 + "です"); //
    		
     	// ↓↓コンソール最終結果↓↓
     	
