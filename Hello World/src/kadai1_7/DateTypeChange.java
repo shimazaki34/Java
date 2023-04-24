@@ -48,6 +48,6 @@ public class DateTypeChange {
 		
 		int in1 = 0;
 		in1 = Integer.valueOf(str);
-		System.out.println(in1);
+		System.out.println(in1);//
 	}
 }
