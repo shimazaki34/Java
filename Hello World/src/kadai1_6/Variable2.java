@@ -9,7 +9,7 @@ public class Variable2 {
 //		変数 x に自己代入を使って「20」を掛け算して下さい。
 //		その後 x の値をコンソールに表示して下さい。
 		int x = 3;
-		x = x * 20;
+		x *= 20;
 		System.out.println(x);
 		
 //		問２）
